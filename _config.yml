@@ -1,10 +1,10 @@
 # Site settings
-title:       pixell中文版 
-email:       youremail@example.com 
-author:      John Otander
+title:       piggycen 
+email:       piggyccen@gmail.com
+author:      piggycen
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
-url:         "http://pixyll.maxee.info"
+url:         "http://piggycen.github.io"
 
 #Duoshuo short Name / 多说的shortname
 duoshuo: 
@@ -33,6 +33,6 @@ flattr_button:
 # Build settings
 markdown:     kramdown
 permalink:    pretty
-paginate:     3
+paginate:     5
 sass:
   compressed: true
