@@ -1,3 +1,10 @@
+---
+layout:     post
+title:      git command
+date:       2016-02-28
+summary:    git命令
+categories: git
+---
 # git常用命令
 ![git work](../images/git_work.png)
 ## git clone 
