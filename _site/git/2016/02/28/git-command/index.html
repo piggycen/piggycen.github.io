@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Thanks For Your Message &#8211; piggycen</title>
+    <title>git command &#8211; piggycen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A personal blog">
+    <meta name="description" content="git命令">
     <meta name="author" content="piggycen">
-    
-    <link rel="canonical" href="http://piggycen.github.io/thanks/">
+    <meta name="keywords" content="git">
+    <link rel="canonical" href="http://piggycen.github.io/git/2016/02/28/git-command/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for piggycen" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -29,17 +29,17 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Thanks For Your Message">
+    <meta property="og:title" content="git command">
     <meta property="og:description" content="A personal blog">
-    <meta property="og:url" content="http://piggycen.github.io/thanks/">
+    <meta property="og:url" content="http://piggycen.github.io/git/2016/02/28/git-command/">
     <meta property="og:site_name" content="piggycen">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="Thanks For Your Message" />
-    <meta name="twitter:description" content="A personal blog" />
-    <meta name="twitter:url" content="http://piggycen.github.io/thanks/" />
+    <meta name="twitter:title" content="git command" />
+    <meta name="twitter:description" content="git命令" />
+    <meta name="twitter:url" content="http://piggycen.github.io/git/2016/02/28/git-command/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -115,15 +115,84 @@
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
-        <div class="post">
-  <header class="post-header">
-    <h1 class="h2">Thanks For Your Message</h1>
-  </header>
-  <article class="post-content">
-  <p>Thanks for contacting us. We will reply as soon as possible.</p>
+        
 
-  </article>
+
+<div class="post-header mb2">
+  <h1>git command</h1>
+  <span class="post-meta">Feb 28, 2016</span><br>
+  
+  <span class="post-meta small">
+  
+    1 minute read
+  
+  </span>
 </div>
+
+<article class="post-content">
+  <h1 id="git">git常用命令</h1>
+<p><img src="/images/git_work.png" alt="git work" /></p>
+
+<h2 id="git-clone">git clone</h2>
+<p><code class="highlighter-rouge">git clone &lt;远程代码仓库网址&gt; (&lt;本地目录名&gt;)</code>
+<br /><br />
+会从远程仓库克隆一份代码到本地，一般本地仓库名和远程仓库名一致，想改变本地仓库名可加<本地目录名></本地目录名></p>
+
+<hr />
+
+<h2 id="git-fetch">git fetch</h2>
+<p><code class="highlighter-rouge">git fetch &lt;远程主机名&gt; (&lt;分支名&gt;)</code>
+<br /><br />
+从远程主机取回(所有分支/某分支)的更新</p>
+
+<hr />
+
+<h2 id="git-pull">git pull</h2>
+<p><code class="highlighter-rouge">git pull &lt;远程主机名&gt; &lt;远程分支名&gt; : &lt;本地分支名&gt;</code>
+<br /><br />
+取回远程主机某个分支的更新，并且和本地的特定分支合并
+<code class="highlighter-rouge">git pull == git fetch + git merge</code></p>
+
+<hr />
+
+<h2 id="git-status">git status</h2>
+<p><code class="highlighter-rouge">git status</code>
+<br /><br />
+查看当前状态下变更的文件</p>
+
+<hr />
+
+<h2 id="git-add">git add</h2>
+<p><code class="highlighter-rouge">git add .</code>
+<br /><br />
+添加当前所有变更的文件到暂存区
+<br /><br />
+<code class="highlighter-rouge">git add [file1][file2]...</code>
+<br /><br />
+将具体的文件添加到暂存区
+<br /><br />
+<code class="highlighter-rouge">git add [dir]</code>
+<br /><br />
+将具体的目录添加到暂存区</p>
+
+<hr />
+
+<h2 id="git-commit">git commit</h2>
+<p><code class="highlighter-rouge">git commit -m [修改内容描写]</code>
+<br /><br />
+将暂存区内的修改内容提交到远程仓库，并且为这次修改取名</p>
+
+</article>
+
+
+
+
+
+
+
+
+
+
 
       </div>
     </div>

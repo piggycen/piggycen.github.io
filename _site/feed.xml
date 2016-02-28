@@ -7,6 +7,65 @@
     <atom:link href="http://piggycen.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>git command</title>
+        <description>&lt;h1 id=&quot;git&quot;&gt;git常用命令&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/images/git_work.png&quot; alt=&quot;git work&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;git-clone&quot;&gt;git clone&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone &amp;lt;远程代码仓库网址&amp;gt; (&amp;lt;本地目录名&amp;gt;)&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+会从远程仓库克隆一份代码到本地，一般本地仓库名和远程仓库名一致，想改变本地仓库名可加&lt;本地目录名&gt;&lt;/本地目录名&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-fetch&quot;&gt;git fetch&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git fetch &amp;lt;远程主机名&amp;gt; (&amp;lt;分支名&amp;gt;)&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+从远程主机取回(所有分支/某分支)的更新&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-pull&quot;&gt;git pull&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git pull &amp;lt;远程主机名&amp;gt; &amp;lt;远程分支名&amp;gt; : &amp;lt;本地分支名&amp;gt;&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+取回远程主机某个分支的更新，并且和本地的特定分支合并
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git pull == git fetch + git merge&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-status&quot;&gt;git status&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+查看当前状态下变更的文件&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-add&quot;&gt;git add&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git add .&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+添加当前所有变更的文件到暂存区
+&lt;br /&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git add [file1][file2]...&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+将具体的文件添加到暂存区
+&lt;br /&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;git add [dir]&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+将具体的目录添加到暂存区&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-commit&quot;&gt;git commit&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit -m [修改内容描写]&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+将暂存区内的修改内容提交到远程仓库，并且为这次修改取名&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Feb 2016 00:00:00 +0800</pubDate>
+        <link>http://piggycen.github.io/git/2016/02/28/git-command/</link>
+        <guid isPermaLink="true">http://piggycen.github.io/git/2016/02/28/git-command/</guid>
+      </item>
+    
+      <item>
         <title>Last day of 2015</title>
         <description>&lt;p&gt;今天是2015年的最后一天，即将迎接新的一年。在刚刚过去的一年里，我结束了4个多月的实习生活，学习了Rails，也把Rails运用到了自己的毕设中，基于Ruby On Rails的教务系统。之前有学习过关于后台的语言，PHP，但是并没有掌握的很好，现在也想趁着公司用的是Rails的技术，让自己锻炼一下。人就是这样，需要有一个助力来推动自己一下，没有外界驱动的情况下，我是一个寻求安逸的人。但是一旦外界给予压力，给予要求，我就会迎头而行，所以我很欣赏电影爆裂鼓手，一个人的潜力就是在驱使下被开发的。在毕设的要求下，我对自己施压，为了完成毕设，我肯定能更加高效的去学习语言。最终在高压下，终于完成了毕设，将Rails知识运用到实践中。&lt;/p&gt;
 
