@@ -11,7 +11,7 @@ categories: rails
 Active Record只支持关系型数据库，MongoDB是一个基于分布式存储的数据库，介于关系型数据库和非关系型数据库之间，是非关系型数据库中功能比较丰富，比较像关系型数据库的一种。如果需要在Rails中使用MongoDB，可以安装第三方的gem库。
 
 
-##安装Gem
+## 安装Gem
 
 首先需要安装Mongoid的gem包
 
