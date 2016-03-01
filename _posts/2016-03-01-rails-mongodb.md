@@ -12,6 +12,7 @@ Active Record只支持关系型数据库，MongoDB是一个基于分布式存储
 
 
 ##安装Gem
+
 首先需要安装Mongoid的gem包
 
 	gem install mongoid
