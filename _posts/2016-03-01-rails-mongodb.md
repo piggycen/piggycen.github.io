@@ -1,11 +1,10 @@
 ---
 layout:     post
-title:      rails+mongoid
+title:      搭建Rails+Mongoid环境
 date:       2016-03-01
 summary:    在Rails工程中运用mongoid
 categories: rails
 ---
-# 搭建Rails+Mongoid环境
 
 在Rails工程中运用Mongoid，和Active Record一样，Mongoid是一个基于MongoDB的比较不错的ORM框架。
 

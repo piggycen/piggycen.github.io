@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact &#8211; piggycen</title>
+    <title>搭建Rails+Mongoid环境 &#8211; piggycen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A personal blog">
+    <meta name="description" content="在Rails工程中运用mongoid">
     <meta name="author" content="piggycen">
-    
-    <link rel="canonical" href="http://piggycen.github.io/contact/">
+    <meta name="keywords" content="rails">
+    <link rel="canonical" href="http://piggycen.github.io/rails/2016/03/01/rails-mongodb/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for piggycen" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -29,17 +29,17 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Contact">
+    <meta property="og:title" content="搭建Rails+Mongoid环境">
     <meta property="og:description" content="A personal blog">
-    <meta property="og:url" content="http://piggycen.github.io/contact/">
+    <meta property="og:url" content="http://piggycen.github.io/rails/2016/03/01/rails-mongodb/">
     <meta property="og:site_name" content="piggycen">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="Contact" />
-    <meta name="twitter:description" content="A personal blog" />
-    <meta name="twitter:url" content="http://piggycen.github.io/contact/" />
+    <meta name="twitter:title" content="搭建Rails+Mongoid环境" />
+    <meta name="twitter:description" content="在Rails工程中运用mongoid" />
+    <meta name="twitter:url" content="http://piggycen.github.io/rails/2016/03/01/rails-mongodb/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -115,28 +115,69 @@
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
-        <div class="post">
-  <header class="post-header">
-    <h1 class="h2">Contact</h1>
-  </header>
-  <article class="post-content">
-  <div class="py2">
+        
+
+
+<div class="post-header mb2">
+  <h1>搭建Rails+Mongoid环境</h1>
+  <span class="post-meta">Mar 1, 2016</span><br>
   
-    <form action="https://formspree.io/piggyccen@gmail.com" method="POST" class="form-stacked">
-      <input type="text" name="email" class="field-light" placeholder="Email Address">
-      <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
-      <input type="hidden" name="_next" value="/thanks/" />
-      <input type="hidden" name="_subject" value="New submission!" />
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
-    </form>
+  <span class="post-meta small">
   
+    1 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <p>在Rails工程中运用Mongoid，和Active Record一样，Mongoid是一个基于MongoDB的比较不错的ORM框架。</p>
+
+<p>Active Record只支持关系型数据库，MongoDB是一个基于分布式存储的数据库，介于关系型数据库和非关系型数据库之间，是非关系型数据库中功能比较丰富，比较像关系型数据库的一种。如果需要在Rails中使用MongoDB，可以安装第三方的gem库。</p>
+
+<h2 id="gem">安装Gem</h2>
+<p>首先需要安装Mongoid的gem包</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install mongoid
+</code></pre>
+</div>
+
+<p><br />
+然后在自己的Rails工程的Gemfile文件中添加一下代码</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gem 'mongoid', '~&gt; 5.1.0'
+</code></pre>
+</div>
+
+<p><br />
+使用自动生成代码，生成Mongoid的配置文件，执行完之后会在app/config目录下生成一个yml文件，mongoid.yml</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>rails g mongoid:config
+</code></pre>
+</div>
+
+<p><br />
+orm对象关系映射，把程序中的对象和关系型数据库中的数据表联系起来，程序中对象的属性和对象之间的关系可以通过一种简单的方法从数据库中获取，无需直接编写SQL语句，也不会过度依赖特定的数据库种类。</p>
+
+<p>最后需要告诉Rails，这个工程使用的orm是Mongoid，所以需要在application.rb文件中添加一下代码块。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>congig.generators do |g|
+  g.orm :mongoid
+end
+</code></pre>
 </div>
 
 
+</article>
 
-  </article>
-</div>
+
+
+
+
+
+
+
+
+
 
       </div>
     </div>

@@ -7,9 +7,52 @@
     <atom:link href="http://piggycen.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>git command</title>
-        <description>&lt;h1 id=&quot;git&quot;&gt;git常用命令&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/images/git_work.png&quot; alt=&quot;git work&quot; /&gt;&lt;/p&gt;
+        <title>搭建Rails+Mongoid环境</title>
+        <description>&lt;p&gt;在Rails工程中运用Mongoid，和Active Record一样，Mongoid是一个基于MongoDB的比较不错的ORM框架。&lt;/p&gt;
+
+&lt;p&gt;Active Record只支持关系型数据库，MongoDB是一个基于分布式存储的数据库，介于关系型数据库和非关系型数据库之间，是非关系型数据库中功能比较丰富，比较像关系型数据库的一种。如果需要在Rails中使用MongoDB，可以安装第三方的gem库。&lt;/p&gt;
+
+&lt;h2 id=&quot;gem&quot;&gt;安装Gem&lt;/h2&gt;
+&lt;p&gt;首先需要安装Mongoid的gem包&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install mongoid
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+然后在自己的Rails工程的Gemfile文件中添加一下代码&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &#39;mongoid&#39;, &#39;~&amp;gt; 5.1.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+使用自动生成代码，生成Mongoid的配置文件，执行完之后会在app/config目录下生成一个yml文件，mongoid.yml&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rails g mongoid:config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+orm对象关系映射，把程序中的对象和关系型数据库中的数据表联系起来，程序中对象的属性和对象之间的关系可以通过一种简单的方法从数据库中获取，无需直接编写SQL语句，也不会过度依赖特定的数据库种类。&lt;/p&gt;
+
+&lt;p&gt;最后需要告诉Rails，这个工程使用的orm是Mongoid，所以需要在application.rb文件中添加一下代码块。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;congig.generators do |g|
+  g.orm :mongoid
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 01 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://piggycen.github.io/rails/2016/03/01/rails-mongodb/</link>
+        <guid isPermaLink="true">http://piggycen.github.io/rails/2016/03/01/rails-mongodb/</guid>
+      </item>
+    
+      <item>
+        <title>git常用命令</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/git_work.png&quot; alt=&quot;git work&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;git-clone&quot;&gt;git clone&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone &amp;lt;远程代码仓库网址&amp;gt; (&amp;lt;本地目录名&amp;gt;)&lt;/code&gt;
