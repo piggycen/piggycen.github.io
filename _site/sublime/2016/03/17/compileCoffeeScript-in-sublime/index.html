@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Last day of 2015 &#8211; piggycen</title>
+    <title>如何在Sublime text2中编译CoffeeScript &#8211; piggycen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Wishes of 2016">
+    <meta name="description" content="在Sublime text2中编译Coffee文件">
     <meta name="author" content="piggycen">
-    <meta name="keywords" content="jekyll, piggycen">
-    <link rel="canonical" href="http://piggycen.github.io/jekyll/piggycen/2016/02/07/the-last-day-of-2015/">
+    <meta name="keywords" content="Sublime">
+    <link rel="canonical" href="http://piggycen.github.io/sublime/2016/03/17/compileCoffeeScript-in-sublime/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for piggycen" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -29,17 +29,17 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Last day of 2015">
+    <meta property="og:title" content="如何在Sublime text2中编译CoffeeScript">
     <meta property="og:description" content="A personal blog">
-    <meta property="og:url" content="http://piggycen.github.io/jekyll/piggycen/2016/02/07/the-last-day-of-2015/">
+    <meta property="og:url" content="http://piggycen.github.io/sublime/2016/03/17/compileCoffeeScript-in-sublime/">
     <meta property="og:site_name" content="piggycen">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     
-    <meta name="twitter:title" content="Last day of 2015" />
-    <meta name="twitter:description" content="Wishes of 2016" />
-    <meta name="twitter:url" content="http://piggycen.github.io/jekyll/piggycen/2016/02/07/the-last-day-of-2015/" />
+    <meta name="twitter:title" content="如何在Sublime text2中编译CoffeeScript" />
+    <meta name="twitter:description" content="在Sublime text2中编译Coffee文件" />
+    <meta name="twitter:url" content="http://piggycen.github.io/sublime/2016/03/17/compileCoffeeScript-in-sublime/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -119,8 +119,8 @@
 
 
 <div class="post-header mb2">
-  <h1>Last day of 2015</h1>
-  <span class="post-meta">Feb 7, 2016</span><br>
+  <h1>如何在Sublime text2中编译CoffeeScript</h1>
+  <span class="post-meta">Mar 17, 2016</span><br>
   
   <span class="post-meta small">
   
@@ -130,11 +130,47 @@
 </div>
 
 <article class="post-content">
-  <p>今天是2015年的最后一天，即将迎接新的一年。在刚刚过去的一年里，我结束了4个多月的实习生活，学习了Rails，也把Rails运用到了自己的毕设中，基于Ruby On Rails的教务系统。之前有学习过关于后台的语言，PHP，但是并没有掌握的很好，现在也想趁着公司用的是Rails的技术，让自己锻炼一下。人就是这样，需要有一个助力来推动自己一下，没有外界驱动的情况下，我是一个寻求安逸的人。但是一旦外界给予压力，给予要求，我就会迎头而行，所以我很欣赏电影爆裂鼓手，一个人的潜力就是在驱使下被开发的。在毕设的要求下，我对自己施压，为了完成毕设，我肯定能更加高效的去学习语言。最终在高压下，终于完成了毕设，将Rails知识运用到实践中。</p>
+  <h2 id="coffeescriptsublime-build">方法一：修改CoffeeScript.sublime-build文件</h2>
 
-<p>去年的时候就用Hexo搭建了一个博客，有自己的域名，但是并没有很好的坚持。在写博文的时候，总觉得自己掌握的知识还不够，不敢写。但是现在我改变了我的想法，在不同的阶段，人有不同的知识理解是很正常的，过去的错误可以在将来被改变，所以不要怕写，要勇敢的尝试。写下一些东西，留下足迹。</p>
+<p><img src="/images/sublime_preferences.png" alt="sublime preferences" /></p>
 
-<p>在2015年的最后一天，我希望自己能够在将来的日子里有所改变。在Rails的实践中，知道了不要畏惧，不要害怕尝试，写过了实践过了，你才会知道问题出现在哪里，不去实践，不去尝试，永远不会知道自己的不足之处。在学习一门语言的时候，正是需要这种方法，实践实践再实践！</p>
+<p>在此目录下找到位于CoffeeScript文件夹下的CoffeeScript.sublime-build文件</p>
+
+<p>修改前为</p>
+
+<p><img src="/images/build_before.png" alt="build before" /></p>
+
+<hr />
+
+<p>修改后为</p>
+
+<p><img src="/images/build_after.png" alt="build after" /></p>
+
+<hr />
+
+<p>按上例修改完成后，快捷键shift+command+b，就可以在控制台输出编译后的JavaScript代码</p>
+
+<p>注：以上均在Mac OS系统下，在Windows下，网上的解决方法是还需将”coffee”修改为”coffee.cmd”</p>
+
+<p>“-cp”: compile and  print， 编译并打印，此命令可参考coffee -h的命令帮助</p>
+
+<p><img src="/images/coffee_help.png" alt="coffee help" /></p>
+
+<h2 id="package----coffee-compile">方法二：安装Package—-coffee compile</h2>
+
+<p>顾名思义coffee compile即编译Coffee文件，具体安装过程可参考github项目–<a href="https://github.com/surjikal/sublime-coffee-compile">sublime-coffee-compile</a></p>
+
+<p>安装完成之后，快捷键shift+control+c</p>
+
+<p>方法二较方法一的优势在于，在方法二中可以自主选择coffee文件中的一段代码进行编译，并且高亮显示，视觉效果比较好</p>
+
+<h3 id="section">方法一编译结果</h3>
+
+<p><img src="/images/compile_first.png" alt="compile first" /></p>
+
+<h3 id="section-1">方法二编译结果</h3>
+<p><img src="/images/compile_second.png" alt="compile second" /></p>
+
 
 </article>
 

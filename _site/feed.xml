@@ -7,6 +7,55 @@
     <atom:link href="http://piggycen.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>如何在Sublime text2中编译CoffeeScript</title>
+        <description>&lt;h2 id=&quot;coffeescriptsublime-build&quot;&gt;方法一：修改CoffeeScript.sublime-build文件&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sublime_preferences.png&quot; alt=&quot;sublime preferences&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在此目录下找到位于CoffeeScript文件夹下的CoffeeScript.sublime-build文件&lt;/p&gt;
+
+&lt;p&gt;修改前为&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/build_before.png&quot; alt=&quot;build before&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;修改后为&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/build_after.png&quot; alt=&quot;build after&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;按上例修改完成后，快捷键shift+command+b，就可以在控制台输出编译后的JavaScript代码&lt;/p&gt;
+
+&lt;p&gt;注：以上均在Mac OS系统下，在Windows下，网上的解决方法是还需将”coffee”修改为”coffee.cmd”&lt;/p&gt;
+
+&lt;p&gt;“-cp”: compile and  print， 编译并打印，此命令可参考coffee -h的命令帮助&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/coffee_help.png&quot; alt=&quot;coffee help&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;package----coffee-compile&quot;&gt;方法二：安装Package—-coffee compile&lt;/h2&gt;
+
+&lt;p&gt;顾名思义coffee compile即编译Coffee文件，具体安装过程可参考github项目–&lt;a href=&quot;https://github.com/surjikal/sublime-coffee-compile&quot;&gt;sublime-coffee-compile&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;安装完成之后，快捷键shift+control+c&lt;/p&gt;
+
+&lt;p&gt;方法二较方法一的优势在于，在方法二中可以自主选择coffee文件中的一段代码进行编译，并且高亮显示，视觉效果比较好&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;方法一编译结果&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/compile_first.png&quot; alt=&quot;compile first&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;方法二编译结果&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/images/compile_second.png&quot; alt=&quot;compile second&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://piggycen.github.io/sublime/2016/03/17/compileCoffeeScript-in-sublime/</link>
+        <guid isPermaLink="true">http://piggycen.github.io/sublime/2016/03/17/compileCoffeeScript-in-sublime/</guid>
+      </item>
+    
+      <item>
         <title>搭建Rails+Mongoid环境</title>
         <description>&lt;p&gt;在Rails工程中运用Mongoid，和Active Record一样，Mongoid是一个基于MongoDB的比较不错的ORM框架。&lt;/p&gt;
 
