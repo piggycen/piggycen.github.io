@@ -6,7 +6,7 @@ summary:    在Sublime text2中编译Coffee文件
 categories: Sublime
 ---
 
-##方法一：修改CoffeeScript.sublime-build文件
+## 方法一：修改CoffeeScript.sublime-build文件
 
 ![sublime preferences](/images/sublime_preferences.png)
 
@@ -32,7 +32,7 @@ categories: Sublime
 
 ![coffee help](/images/coffee_help.png)
 
-##方法二：安装Package----coffee compile
+## 方法二：安装Package----coffee compile
 
 顾名思义coffee compile即编译Coffee文件，具体安装过程可参考github项目--[sublime-coffee-compile](https://github.com/surjikal/sublime-coffee-compile)
 
@@ -40,11 +40,11 @@ categories: Sublime
 
 方法二较方法一的优势在于，在方法二中可以自主选择coffee文件中的一段代码进行编译，并且高亮显示，视觉效果比较好
 
-###方法一编译结果
+### 方法一编译结果
 
 ![compile first](/images/compile_first.png)
 
-###方法二编译结果
+### 方法二编译结果
 ![compile second](/images/compile_second.png)
 
 
