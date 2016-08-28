@@ -25,9 +25,11 @@ categories: git
 `git pull <远程主机名> <远程分支名> : <本地分支名>`
 <br><br>
 取回远程主机某个分支的更新，并且和本地的特定分支合并
+<br>
 `git pull == git fetch + git merge`
 <br><br>
 本地文件已经删除，需要从远程仓库覆盖本地的代码
+<br>
 `git checkout`
 <br>
 `git pull --rebase`
