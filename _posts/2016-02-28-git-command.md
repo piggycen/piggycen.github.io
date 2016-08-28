@@ -26,6 +26,11 @@ categories: git
 <br><br>
 取回远程主机某个分支的更新，并且和本地的特定分支合并
 `git pull == git fetch + git merge`
+<br><br>
+本地文件已经删除，需要从远程仓库覆盖本地的代码
+`git checkout`
+<br>
+`git pull --rebase`
 
 ***
 
@@ -55,3 +60,16 @@ categories: git
 `git commit -m [修改内容描写]`
 <br><br>
 将暂存区内的修改内容提交到远程仓库，并且为这次修改取名
+
+
+
+
+
+
+
+
+
+
+
+
+
